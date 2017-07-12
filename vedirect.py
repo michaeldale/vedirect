@@ -97,6 +97,24 @@ class vedirect:
 
 
 def print_data_callback(data):
+    
+    # See https://github.com/fab13n/elorn_energy/blob/master/src/victron/mppt.lua
+    # for field description.
+
+    #out = dict()
+
+    #for k in ['V', 'I', 'VPV']:
+    #    out[k] = float(data[k])/1000
+
+    #for k in ['H19', 'H20', 'H22']:
+    #    out[k] = float(data[k])/100
+
+    #for k in ['CS', 'ERR', 'H21', 'H23', 'PPV']:
+    #    out[k] = data[k]
+
+    #g.send_dict(out)
+    #time.sleep(1)
+    
     print data
 
 if __name__ == '__main__':
